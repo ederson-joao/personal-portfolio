@@ -1,23 +1,26 @@
+body {
+    background-color: #12372A;
+}
 header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #253529;
-    border-bottom: 2px solid #48654e;
+    background-color: #12372A;
+    border-bottom: 2px solid #436850;
 }
 
 .containerHeader {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2.5rem 0;
+    padding: 1rem 0;
 }
 
 .dropdown-toggle {
     cursor: pointer;
     padding: 1rem;
     background-image: url(./assets/img/icon-menu.svg);
-    background-color:#253529 ;
+    background-color:#12372A ;
     border: none;
 }
 
@@ -26,9 +29,10 @@ header {
 }
 
 .dropdown-menu.show {
-    margin-top: 2.55rem;
+    margin-top: 1.2rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10px);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,13 +51,13 @@ header {
 header h2 {
     margin:0;
     font-family: 'DM Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #e4e5e3;
+    color: #ADBC9F;
 }
 
 .colorTheme {
-    background: #48654e;
+    background: #436850;
     width: 3rem;
     border-radius: 2rem;
     padding: 0.3rem;
@@ -61,8 +65,80 @@ header h2 {
 }
 
 .colorThemePicker {
-    background-color: #e4e5e3;
+    background-color: #FBFADA;
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
+}
+
+.banner {
+    height: 87.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.myPhoto
+ {
+    border-radius: 50%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h2 {
+    margin: 0.5rem 0 0 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ADBC9F;
+    text-align: center;
+}
+
+.intro .name {
+    color:#FBFADA;
+}
+
+.intro h1 {
+    margin: 1rem 0 1rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #afabab;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #436850;
+    border-radius: 20px;
+}
+
+.personalSummary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personalSummary h2{
+    color: #ADBC9F;
+    margin: 1.5rem 0 0 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.personalSummary p{
+    color: #FBFADA;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 150%;
+    margin: 0.5rem 0 0 0;
 }
