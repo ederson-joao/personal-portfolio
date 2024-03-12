@@ -72,7 +72,7 @@ header h2 {
 }
 
 .banner {
-    height: 87.5vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +92,7 @@ header h2 {
 }
 
 .intro h2 {
-    margin: 0.5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     font-family: 'DM Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -140,5 +140,56 @@ header h2 {
     text-align: center;
     font-family: 'DM Sans', sans-serif;
     line-height: 150%;
-    margin: 0.5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
+}
+
+.skills {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.skills h2 {
+    color: #ADBC9F;
+    margin: 1.5rem 0 0 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 1rem 0 0 0;
+}
+
+.card {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ADBC9F;
+    border-top-left-radius: 2.5rem;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-title {
+    color: #ffffff
+}
+
+.card-img-top {
+    width: 60px;
+    height: 60px;
 }

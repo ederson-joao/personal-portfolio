@@ -1,11 +1,15 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import  Dropdown from 'react-bootstrap/Dropdown';
 import Card from 'react-bootstrap/Card';
 import myPhoto from './assets/img/my-photo.png';
+import curriculo from './assets/cv/curriculo-ederson.pdf';
 import iconGitHub from './assets/img/icon-github.svg';
 import iconLinkedin from './assets/img/icon-linkedin.svg';
 import iconCurriculo from './assets/img/icon-curriculo.svg';
-import curriculo from './assets/cv/curriculo-ederson.pdf';
+import iconHTML5 from './assets/img/icon-html5.svg';
+import iconCSS3 from './assets/img/icon-css3.svg';
 
 function App() {
   return (
@@ -52,12 +56,32 @@ function App() {
       <section>
         <div className='skills'>
             <h2>Habilidades</h2>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-              </Card.Body>
-            </Card>
+            <div className='cards'>
+              <Card>
+                <Card.Img variant="top" src={iconHTML5} />
+                <Card.Title>HTML5</Card.Title>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={iconCSS3} />
+                <Card.Title>CSS3</Card.Title>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={iconCSS3} />
+                <Card.Title>JavaScript</Card.Title>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={iconCSS3} />
+                <Card.Title>React</Card.Title>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={iconCSS3} />
+                <Card.Title>Git</Card.Title>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={iconCSS3} />
+                <Card.Title>GitHub</Card.Title>
+              </Card>
+            </div>
         </div>
       </section>
     </>
